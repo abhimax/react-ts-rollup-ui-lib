@@ -2,7 +2,10 @@
   "name": "@abhimax/react-ts-rollup-ui-lib",
   "version": "0.0.1",
   "description": "A React UI library using Rollup: streamlined components for efficient React application development.",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
