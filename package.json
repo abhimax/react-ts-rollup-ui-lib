@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/abhimax/react-ts-rollup-ui-lib.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/abhimax"
+  },
   "keywords": [
     "react",
     "ui",
