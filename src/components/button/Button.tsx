@@ -1,5 +1,5 @@
 import { FC, ButtonHTMLAttributes } from "react";
-
+import './button.css';
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';
 }
