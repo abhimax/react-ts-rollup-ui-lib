@@ -1,10 +1,10 @@
-import { FC, ButtonHTMLAttributes } from "react";
+import React  from "react";
 import './button.css';
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';
 }
 
-const Button: FC<ButtonProps> = ({ variant, ...props }) => {
+const Button: React.FC<ButtonProps> = ({ variant, ...props }) => {
   const styles = () => {
     const propStyle = props.style ?? {};
     if (props.disabled) return propStyle;
