@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+.button {
+    font-family: 'Arial', sans-serif; /* Example font, can also be defined as a CSS variable */
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+
+    &.primary {
+        background-color: var(--primary-color);
+        color: white;
+        &:hover {
+            background-color: var(--primary-color-dark);
+        }
+    }
+
+    &.secondary {
+        background-color: var(--secondary-color);
+        color: black;
+        &:hover {
+            background-color: var(--secondary-color-dark);
+        }
+    }
+
+    &.small {
+        font-size: var(--font-size-small);
+        padding: var(--padding-small) calc(var(--padding-small)*2);
+    }
+
+    &.medium {
+        font-size: var(--font-size-medium);
+        padding: var(--padding-medium) calc(var(--padding-medium)*2);
+    }
+
+    &.large {
+        font-size: var(--font-size-large);
+        padding: var(--padding-large) calc(var(--padding-large)*2);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    // Additional custom styles can be added here as needed
+}
