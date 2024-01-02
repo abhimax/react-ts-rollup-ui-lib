@@ -1,0 +1,39 @@
+.toggle-container {
+    display: flex;
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.toggle-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    padding: 5px 10px;
+}
+
+.toggle-indicator {
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.active {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    
+}
+
+.left {
+    transform: translateX(0%);
+}
+
+.right {
+    transform: translateX(100%);
+}
